@@ -36,4 +36,32 @@ public interface CharactersVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDigitChar(CharactersParser.DigitCharContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code WhitespaceChar}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitWhitespaceChar(CharactersParser.WhitespaceCharContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code PunctuationChar}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPunctuationChar(CharactersParser.PunctuationCharContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExtendedChar}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExtendedChar(CharactersParser.ExtendedCharContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code OtherChar}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOtherChar(CharactersParser.OtherCharContext ctx);
 }

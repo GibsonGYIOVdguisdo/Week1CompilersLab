@@ -22,4 +22,26 @@ public class Week1Visitor extends AbstractParseTreeVisitor<String> implements Ch
     {
         return "\""+ctx.getText()+"\" : numeric\n";
     }
+
+    @Override
+    public String visitWhitespaceChar(CharactersParser.WhitespaceCharContext ctx) {
+        return "\""+ctx.getText()+"\" : whitespace\n";
+    }
+
+    @Override
+    public String visitExtendedChar(CharactersParser.ExtendedCharContext ctx) {
+        return "\""+ctx.getText()+"\" : extended character\n";
+    }
+
+    @Override
+    public String visitOtherChar(CharactersParser.OtherCharContext ctx) {
+        return "unprintable";
+    }
+
+    @Override
+    public String visitPunctuationChar(CharactersParser.PunctuationCharContext ctx) {
+        return "\""+ctx.getText()+"\" : punctuation\n";
+    }
+
+
 }
