@@ -5,7 +5,6 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import java.io.IOException;
 
 public class Week1 {
-
     public static void main(String[] args) throws IOException {
         // create a CharStream that reads from standard input
         CharStream input = CharStreams.fromStream(System.in);

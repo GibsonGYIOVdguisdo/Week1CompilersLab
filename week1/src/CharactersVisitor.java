@@ -1,4 +1,4 @@
-// Generated from C:/Users/gh379/Documents/Programming/Week1/week1/src/Characters.g4 by ANTLR 4.13.2
+// Generated from C:/Users/gh379/Documents/Programming/Week1CompilersLab/week1/src/Characters.g4 by ANTLR 4.13.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -15,6 +15,41 @@ public interface CharactersVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitCharstring(CharactersParser.CharstringContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Keyword}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitKeyword(CharactersParser.KeywordContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Identifier}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIdentifier(CharactersParser.IdentifierContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Operation}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOperation(CharactersParser.OperationContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Semicolon}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSemicolon(CharactersParser.SemicolonContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code Integer}
+	 * labeled alternative in {@link CharactersParser#somechar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitInteger(CharactersParser.IntegerContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code UppercaseChar}
 	 * labeled alternative in {@link CharactersParser#somechar}.

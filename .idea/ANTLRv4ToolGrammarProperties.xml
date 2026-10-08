@@ -5,6 +5,7 @@
       <list>
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/week1/src/Characters.g4" />
+          <option name="autoGen" value="true" />
           <option name="outputDir" value="$PROJECT_DIR$/week1/src" />
           <option name="libDir" value="" />
           <option name="encoding" value="" />
